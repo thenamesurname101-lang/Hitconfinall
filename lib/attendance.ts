@@ -1,12 +1,12 @@
 export const DEFAULT_TIMES = {
-  Present: { check_in: '07:30', check_out: '16:30', hours_worked: 8 },
-  'Half Day': { check_in: '07:30', check_out: '12:30', hours_worked: 4 },
+  Present: { check_in: '07:30', check_out: '16:30', hours_worked: 9 },
+  'Half Day': { check_in: '07:30', check_out: '12:30', hours_worked: 4.5 },
   Absent: { check_in: '', check_out: '', hours_worked: 0 },
   'Sick Leave': { check_in: '', check_out: '', hours_worked: 0 },
   'Annual Leave': { check_in: '', check_out: '', hours_worked: 0 },
 } as const;
 
-export const LUNCH_BREAK_HOURS = 1;
+export const LUNCH_BREAK_HOURS = 0;
 export const STATUS_OPTIONS = ['Present', 'Absent', 'Sick Leave', 'Annual Leave', 'Half Day'] as const;
 export type AttendanceStatus = typeof STATUS_OPTIONS[number];
 
